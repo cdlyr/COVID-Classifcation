@@ -10,11 +10,11 @@ from keras.applications.xception import Xception, preprocess_input
 from keras.optimizers import Adam
 from keras.preprocessing import image
 from keras.losses import categorical_crossentropy
-from keras.layers import Dense, GlobalAveragePooling2D
+from keras.layers import Dense, GlobalAveragePooling2D,Dropout
 from keras.models import Model
 from keras.utils import to_categorical
 from keras.callbacks import ModelCheckpoint
-
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 matplotlib.use('Agg')
 current_directory = os.path.dirname(os.path.abspath(__file__))
 parser = argparse.ArgumentParser()
@@ -121,6 +121,7 @@ def main(args):
     x = base_model.output
     x = GlobalAveragePooling2D()(x)
     x = Dense(1024, activation='relu')(x)
+    x = Dropout(0.8)(x)
     predictions = Dense(num_classes, activation='softmax')(x)
     model = Model(inputs=base_model.inputs, outputs=predictions)
 

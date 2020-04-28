@@ -1,12 +1,8 @@
-BACKGROUND_Google
-Faces
-Faces_easy
-Leopards
-Motorbikes
 accordion
 airplanes
 anchor
 ant
+BACKGROUND_Google
 barrel
 bass
 beaver
@@ -39,6 +35,8 @@ elephant
 emu
 euphonium
 ewer
+Faces
+Faces_easy
 ferry
 flamingo
 flamingo_head
@@ -57,6 +55,7 @@ kangaroo
 ketch
 lamp
 laptop
+Leopards
 llama
 lobster
 lotus
@@ -65,6 +64,7 @@ mayfly
 menorah
 metronome
 minaret
+Motorbikes
 nautilus
 octopus
 okapi

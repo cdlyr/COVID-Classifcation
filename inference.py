@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('model')
 parser.add_argument('classes')
 parser.add_argument('image')
-parser.add_argument('--top_n', type=int, default=10)
+parser.add_argument('--top_n', type=int, default=2)
 
 
 def main(args):
